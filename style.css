@@ -1,0 +1,67 @@
+:root{
+--White: hsl(0, 0%, 100%);
+--Light-gray: hsl(212, 45%, 89%);
+--Grayish-blue: hsl(220, 15%, 55%);
+--Dark-blue: hsl(218, 44%, 22%) ;
+}
+@import url(reset.sass);
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap');
+
+body {
+    background-color: var(--Light-gray);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    overflow: hidden;
+
+}
+h1 {
+    color: black;
+}
+h2{
+    color: var(--Grayish-blue);
+}
+
+img{
+    display: block;
+    object-fit: contain;
+    width: 100%;
+}
+main{
+    display: block;
+    background-color: var(--White);
+    border-radius: 1.5rem;
+    width: 20%;
+    min-width: 20rem;
+    min-height: 60%;
+    padding: 1.5rem;
+    text-align: center;
+}
+main:hover{
+    background: hsl(0deg, 0%, 100%);
+    box-shadow: 1 1rem 0.2rem rgba(32, 51, 82, 0.14), 1 1rem 0.2rem rgba(34, 53, 83, 0.24);
+    color: hsl(218deg, 44%, 22%);
+    border-radius: 2rem;
+    transition: all 0.4s ease-in-out;
+}
+@media screen and (max-height:66em) and (max-width:27em) {
+main {
+    min-width: none;
+    min-height: none;
+    max-height: 70%;
+}
+body{
+    overflow: visible;
+}
+} 
+
+/* utility */
+
+.fw-400{
+    font-weight: 400;
+}
+.fw-700{ 
+    font-weight: 700;
+}
