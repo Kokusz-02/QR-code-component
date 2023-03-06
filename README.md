@@ -10,7 +10,7 @@ images\Frontend Mentor QR code component.png
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Solution URL: https://www.frontendmentor.io/solutions/qr-code-component-ZI2rt40W0u
 - Live Site URL: https://kokusz-02.github.io/QR-code-component/
 
 ### Built with
