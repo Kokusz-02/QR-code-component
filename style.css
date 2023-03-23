@@ -15,47 +15,49 @@ body {
     align-items: center;
     min-height: 100vh;
     overflow: hidden;
-
+    font-size: 0.9rem;
 }
 h1 {
-    color: black;
+    color: var(--Dark-blue);
 }
 h2{
     color: var(--Grayish-blue);
 }
-
+h1 p{
+    font-size: 0.9375rem;
+    margin: 1rem 1rem 0 1rem;
+}
+.p{
+    margin-bottom: 1.5rem;
+}
 img{
     display: block;
     object-fit: contain;
     width: 100%;
+    max-width: 100%;
+    border-radius: 1rem;
 }
 main{
-    display: block;
     background-color: var(--White);
+    max-width: 20rem;
+    padding: 1rem;
     border-radius: 1.5rem;
     width: 20%;
     min-width: 20rem;
-    min-height: 60%;
+
     padding: 1.5rem;
     text-align: center;
 }
 main:hover{
     background: hsl(0deg, 0%, 100%);
-    box-shadow: 1 1rem 0.2rem rgba(32, 51, 82, 0.14), 1 1rem 0.2rem rgba(34, 53, 83, 0.24);
-    color: hsl(218deg, 44%, 22%);
+    box-shadow: 0 0.9rem 1.75rem rgba(30, 50, 82, 0.267), 0 0.6rem 0.6rem rgba(30, 50, 82, 0.247);
+    color: hsl(222deg, 45%, 23%);
     border-radius: 2rem;
-    transition: all 0.4s ease-in-out;
-}
-@media screen and (max-height:66em) and (max-width:27em) {
-main {
-    min-width: none;
-    min-height: none;
-    max-height: 70%;
+    transition: all 0.3s ease-in-out;
 }
 body{
     overflow: visible;
 }
-} 
 
 /* utility */
 
